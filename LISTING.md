@@ -70,7 +70,7 @@ Works on any agent. The Python calculator is optional; agents without code execu
 - **Is it legal advice?** No. Licence notes are basics; read the licence of the exact item.
 - **Not affiliated with Adobe, Canva or Photopea.** Photoshop is a trademark of Adobe.
 
-## Price suggestion: **Free**
+## Price: **Free** (owner decision 2026-11-11: same as the other open skills — autocad-coach, data-analyst-coach, money-basics-scam-shield)
 - **Competitors are free:** the closest Agensi listing (Visual Design, Brand and Presentations pack) is free with 5 uses; Photoshop GPTs are free; skills.sh Photoshop skills are free automation tools.
 - **Audience:** beginners and SMM freelancers in Azerbaijan/CIS (SMM pay seen 300–700 AZN/month). Under $5 they can only pay from an Agensi balance, which most don't have.
 - **Low demand signal:** design skills on Agensi mostly have under 100 uses; a paid newcomer with no reviews would get none.
