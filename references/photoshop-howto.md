@@ -12,7 +12,7 @@ Russian/other interface: menu names differ; shortcuts are the same.
 | Canvas size (add space, no scaling) | Image ▸ Canvas Size | `Ctrl+Alt+C` | `Cmd+Option+C` |
 | Crop to exact ratio | Crop tool `C` ▸ options bar: Ratio or W × H × Resolution | `C` | `C` |
 | Colour mode | Image ▸ Mode ▸ RGB Color / CMYK Color | – | – |
-| Rulers / guides | View ▸ Rulers; drag a guide from the ruler; View ▸ Guides ▸ New Guide Layout (margins, columns) | `Ctrl+R` | `Cmd+R` |
+| Rulers / guides | View ▸ Rulers; drag a guide from the ruler; View ▸ Guides ▸ New Guide Layout (older versions: View ▸ New Guide Layout; check your View menu) (margins, columns) | `Ctrl+R` | `Cmd+R` |
 
 Image Size tip: untick **Resample** to change only the ppi number for print without changing pixels. Tick Resample (Preserve Details 2.0 / Bicubic) to really change pixels. Upscaling a small photo adds no real detail.
 
@@ -38,7 +38,7 @@ Mask painting: black hides, white shows (`D` resets colours, `X` swaps).
 |---|---|
 | Select Subject (AI, one click) | Select ▸ Subject, or the Object Selection tool's options bar |
 | Remove background in one step | Properties panel (with the layer selected) ▸ Quick Actions ▸ Remove Background; also on the Contextual Task Bar. Creates a layer mask, so nothing is deleted |
-| Refine hair/edges | Select ▸ Select and Mask (`Ctrl+Alt+R` / `Cmd+Option+R`) ▸ Refine Hair or Refine Edge Brush ▸ Output To: Layer Mask |
+| Refine hair/edges (optional; after Remove Background the mask already exists: select the mask thumbnail ▸ Properties ▸ Select and Mask) | Select ▸ Select and Mask (`Ctrl+Alt+R` / `Cmd+Option+R`) ▸ Refine Hair or Refine Edge Brush ▸ Output To: Layer Mask |
 | Select a colour range (e.g. sky) | Select ▸ Color Range / Select ▸ Sky |
 | Invert selection | Select ▸ Inverse, `Ctrl+Shift+I` / `Cmd+Shift+I` |
 | Deselect | `Ctrl+D` / `Cmd+D` |
@@ -59,6 +59,7 @@ Work on a duplicate layer (`Ctrl+J`) or a new empty layer with "Sample All Layer
 - Window ▸ Character / Paragraph for size, leading, tracking.
 - Missing font on open: Photoshop shows a warning; Type ▸ Resolve Missing Fonts (Adobe Fonts may auto-activate if available).
 - Keep text as text (vector) until export; it stays sharp at any size.
+- Readable on small screens (thumbnails, stories): Layer ▸ Layer Style ▸ Stroke (2–6 px, dark) or Drop Shadow; or double-click the layer (fx).
 
 ## Save and export
 | Goal | Path | Win | Mac |

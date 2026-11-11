@@ -16,7 +16,7 @@ Never promise screen = print.
 
 ## 3. Text or logo cut off at the edge / white line at the edge after cutting
 1. **No bleed.** Fix: extend the background 3 mm past each trim edge (0.125 in in the US). A 90 × 50 mm card becomes 96 × 56 mm.
-2. **Important things too close to the edge.** Fix: keep text and logos inside a safe zone 3–5 mm inside the trim line (use guides: View ▸ Guides ▸ New Guide Layout ▸ Margin).
+2. **Important things too close to the edge.** Fix: keep text and logos inside a safe zone 3–5 mm inside the trim line (use guides: View ▸ Guides ▸ New Guide Layout ▸ Margin in recent versions; older versions: View ▸ New Guide Layout — check your View menu).
 3. **Wrong document size** (e.g. made at 1000 × 600 px without mm). Fix: rebuild at the mm size + bleed at 300 ppi.
 
 ## 4. Generative Fill / Generate Image is greyed out or fails

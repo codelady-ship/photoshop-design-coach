@@ -15,7 +15,8 @@ V = checked in the tool's own docs; U = not confirmed (page blocked or from memo
 
 ## Photopea differences that trip people up
 - **Free Transform is `Alt+Ctrl+T`** (Edit ▸ Free Transform), not `Ctrl+T`, because `Ctrl+T` opens a new browser tab (V: photopea.com/learn/free-transform). On Mac try `Option+Cmd+T`.
-- Layer mask: Layer ▸ Raster Mask ▸ Add (or Vector Mask) (V).
+- Layer mask: Layer ▸ Raster Mask ▸ Add (or Vector Mask) per photopea.com/learn/masks (V); the submenu may show Reveal All / Hide All; the mask icon at the bottom of the Layers panel always works.
+- Text stroke/shadow: Layer ▸ Layer Style ▸ Stroke / Drop Shadow, or double-click the layer (U: check the menu).
 - One-click background removal: Select ▸ Remove BG, then File ▸ Export As ▸ PNG (V). Select ▸ Magic Cut also exists (U).
 - Save with layers: File ▸ Save as PSD (V). Export: File ▸ Export As ▸ JPG/PNG/PDF/SVG with size and quality (V).
 - Image ▸ Mode ▸ CMYK only previews print colours with a generic profile (V: Photopea 5.2 blog). For real print, send RGB PDF/PNG to the shop and ask them, or use a tool with real CMYK output.
