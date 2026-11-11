@@ -34,7 +34,7 @@ use_cases:
   - Get a design review with a colour-contrast check
   - Build a junior designer portfolio and prepare for a test task
   - Check whether fonts, stock photos and AI images are safe to use
-# docs_url: add https://github.com/codelady-ship/photoshop-design-coach once the repo is public
+docs_url: https://github.com/codelady-ship/photoshop-design-coach
 ---
 
 # Photoshop & Design Coach

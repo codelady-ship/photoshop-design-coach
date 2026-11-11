@@ -9,7 +9,7 @@ DRAFT. Nothing has been submitted. The owner pastes these fields into agensi.io/
 | Version | 1.0.0 |
 | Price | **Free** |
 | Brand | Codelady Abroad |
-| Docs link | **Leave empty.** No public repo exists yet. Add `https://github.com/codelady-ship/photoshop-design-coach` only after the owner makes the repo public (and then uncomment `docs_url` in SKILL.md) |
+| Docs link | `https://github.com/codelady-ship/photoshop-design-coach` (public repo, MIT) |
 
 ## Name (≤ 60) — 49 characters
 ```text
