@@ -23,7 +23,7 @@ Never promise screen = print.
 Adobe's own list (helpx "Common generative AI issues in Photoshop", seen in search, not opened):
 1. **No active selection** (Generative Fill needs one; Expand needs the Crop tool). Check: marching ants visible? Fix: make a selection.
 2. **Unsupported file or layer.** Needs an RGB, 8-bit document and a normal pixel layer; text layers, shapes, smart objects, clipped layers, grayscale or 32-bit files can block it. Check: Image ▸ Mode. Fix: Image ▸ Mode ▸ RGB Color and 8 Bits/Channel, rasterise or pick a pixel layer, unclip.
-3. **Account or connection.** Not signed in, offline/firewall, no generative credits left, Adobe ID without a valid birth date (18+ rule) or an Education/Enterprise account with gen-AI turned off, or a region where it is not offered. Check: Help ▸ Sign in; credits on the Adobe account page. Fix: sign in, connect, wait for the monthly reset or use Content-Aware Fill / Remove tool (non-AI).
+3. **Account or connection.** Not signed in, offline/firewall, no generative credits left, Adobe ID without a valid birth date (18+ rule) or an Education/Enterprise account with gen-AI turned off, or a region where it is not offered. Check: signed in? (profile icon at the top right of Photoshop, or the Creative Cloud app); credits on the Adobe account page. Fix: sign in, connect, wait for the monthly reset or use Content-Aware Fill / Remove tool (non-AI).
 Also update Photoshop (Help ▸ Updates) if the version is old.
 
 ## 5. File is huge / Photoshop slow
