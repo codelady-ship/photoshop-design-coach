@@ -17,3 +17,8 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - `references/job-prep.md`: Baku job-ad snapshot, portfolio plan, test-task time plan and self-check, interview questions.
 - `scripts/design_calc.py`: optional standalone Python (stdlib only, no files, no network) for pixels/print size, bleed, presets and WCAG contrast. SKILL.md gives the same maths as a text fallback.
 - `evals/evals.json` (8 cases), `scripts/build-agensi-zip.ps1`, `LISTING.md`, README, MIT licence.
+
+### Fixed (blind evals, before release)
+- Round 1 (5/8): whole-answer length cap (~25 lines), exactly one closing line, translated format labels, no filler; Instagram Manager pointer only when asked; "Faster:" only when useful; stay in the user's free tool; text stroke/shadow for small screens; max 3 causes per answer; review must cover focal point and key info; salary data only if asked; commercial-use answer in 3 bullets; hedged guide-layout and Photopea mask paths.
+- Round 2 (2/5): print problems always end with "the print shop's rules win"; fixed items in the review's format-fit line; portfolio always includes a print piece with bleed; removed an unverified "Help ▸ Sign in" path.
+- Round 3: 3/3. Final 8/8. Details: `tests/results.md`. The Python helper was verified via a Node port (16/16) because Python isn't installed on the build PC.

@@ -37,7 +37,7 @@ Where it stops: it can't see your screen or open PSD files (it reviews images on
 ```
 
 ## "See it in action" demo (700+ characters)
-Use the passing blind-eval answer for case 2 (Russian business card print problem) or case 3 (A5 flyer + story sizes) from `tests/` (request + full answer).
+Use the passing blind-eval answer `tests/round3/case4.md` (poster review, English) or `tests/round1/case3.md` (A5 flyer + story sizes), request + full answer.
 
 ## Categories (up to 3)
 1. Education & Learning
