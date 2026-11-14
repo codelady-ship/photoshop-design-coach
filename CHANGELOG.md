@@ -3,6 +3,18 @@
 All notable changes to this project are documented here.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## [1.1.0] - 2026-11-14
+
+### Added
+- `SKILL.md`: **Plan compatibility (Free, Pro, Max, Team)** section. No web search: answers come from `references/` and version-specific Photoshop facts the references don't confirm are marked "check Adobe Help", never "checked". Free usage limits: lite path (one mode, top 3 steps, then "details?"), without cutting the refusal or "print shop's rules win" lines. No code execution: px, DPI, bleed and contrast by hand with the existing formulas. No scheduled tasks needed.
+- README: matching "Plan compatibility" section.
+- `evals/evals.json`: cases 9-11 (no web search, lite path, no code execution).
+
+### Fixed
+- `scripts/design_calc.py`: `--json` now works after the command too (`design_calc.py px 90 50 --json`), as the docstring says, via a shared parent parser; `--json` before the command still works.
+- README: removed a link to research notes outside this repository.
+- `SKILL.md` footer no longer says "Version facts from Adobe Help (checked 2026-11)": helpx.adobe.com could not be opened during research, and the blind eval showed the model repeating "checked" in a no-web-search answer. It now says the facts come from the skill's notes and to check Adobe Help for your version.
+
 ## [1.0.0] - 2026-11-11
 
 ### Added
