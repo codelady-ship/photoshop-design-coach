@@ -35,6 +35,10 @@ python scripts/design_calc.py contrast "#777777" "#ffffff"     # WCAG contrast r
 
 The skill never needs it: SKILL.md and `references/` give the same formulas for agents that can't run code.
 
+## Plan compatibility
+
+Works on **every Claude plan: Free, Pro, Max and Team**. Turn on *Settings → Capabilities → Code execution and file creation* (Skills need it; every plan has it). No web search is needed: answers come from `references/`, and version-specific Photoshop facts the references don't confirm are marked "check Adobe Help". No code execution is needed: pixels, DPI, bleed and contrast are worked out by hand with the formulas in SKILL.md and `references/`. No scheduled tasks are needed. On tight Free limits, it gives one mode and the top 3 steps, then offers "details?".
+
 ## Safety and honesty
 
 - No help with cracks, keygens, trial resets, unlocking Canva Pro or removing watermarks.
@@ -73,7 +77,7 @@ The skill never needs it: SKILL.md and `references/` give the same formulas for 
 
 ## Sources
 
-Written from scratch. Facts were checked on adobe.com plan and feature pages, photopea.com/learn, gimp.org and docs.gimp.org, krita.org, w3.org (WCAG 2.2), YouTube and LinkedIn help, the Meta ads guide, and the licence pages of Unsplash, Pexels, Adobe Stock, the SIL OFL and the US Copyright Office. helpx.adobe.com could not be opened during research, so shortcut and troubleshooting facts from it are marked unverified. Research notes: `../../research/photoshop-design-skill-research-2026-11-11.md`.
+Written from scratch. Facts were checked on adobe.com plan and feature pages, photopea.com/learn, gimp.org and docs.gimp.org, krita.org, w3.org (WCAG 2.2), YouTube and LinkedIn help, the Meta ads guide, and the licence pages of Unsplash, Pexels, Adobe Stock, the SIL OFL and the US Copyright Office. helpx.adobe.com could not be opened during research, so shortcut and troubleshooting facts from it are marked unverified.
 
 Adobe, Photoshop, Firefly and Creative Cloud are trademarks of Adobe. Canva, Photopea, GIMP, Krita and Inkscape belong to their owners. This project is not affiliated with or endorsed by any of them.
 

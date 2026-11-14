@@ -11,7 +11,8 @@ Commands
   presets  list all named sizes      design_calc.py presets
   contrast WCAG 2.x contrast ratio   design_calc.py contrast "#777777" "#ffffff"
 
-Add --json to any command for machine-readable output.
+Add --json to any command for machine-readable output, before or after the
+command: design_calc.py px 90 50 --json  or  design_calc.py --json px 90 50
 """
 
 import argparse
@@ -168,28 +169,32 @@ def show(data, as_json):
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Print/screen size, DPI, bleed and WCAG contrast calculator.")
     ap.add_argument("--json", action="store_true", help="JSON output")
+    # Shared parent so --json also works after the command ("px 90 50 --json").
+    # SUPPRESS keeps a subcommand from resetting a --json given before the command.
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument("--json", action="store_true", default=argparse.SUPPRESS, help="JSON output")
     sub = ap.add_subparsers(dest="cmd")
 
-    a = sub.add_parser("px", help="print size -> pixels")
+    a = sub.add_parser("px", parents=[common], help="print size -> pixels")
     a.add_argument("w", type=float)
     a.add_argument("h", type=float)
     a.add_argument("--unit", default="mm", choices=["mm", "cm", "in"])
     a.add_argument("--dpi", type=float, default=300)
     a.add_argument("--bleed", type=float, default=0.0, help="bleed per side, in mm")
 
-    b = sub.add_parser("size", help="pixels -> print size")
+    b = sub.add_parser("size", parents=[common], help="pixels -> print size")
     b.add_argument("w", type=int)
     b.add_argument("h", type=int)
     b.add_argument("--dpi", type=float, default=300)
 
-    c = sub.add_parser("preset", help="one named size")
+    c = sub.add_parser("preset", parents=[common], help="one named size")
     c.add_argument("name")
     c.add_argument("--dpi", type=float, default=300)
     c.add_argument("--bleed", type=float, default=3.0, help="bleed per side in mm (print presets)")
 
-    sub.add_parser("presets", help="list named sizes")
+    sub.add_parser("presets", parents=[common], help="list named sizes")
 
-    d = sub.add_parser("contrast", help="WCAG contrast of two hex colours")
+    d = sub.add_parser("contrast", parents=[common], help="WCAG contrast of two hex colours")
     d.add_argument("fg")
     d.add_argument("bg")
 

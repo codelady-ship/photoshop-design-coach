@@ -108,6 +108,43 @@
         "Export as JPG or PNG via File > Export as",
         "Includes a check line and ends with one next step"
       ]
+    },
+    {
+      "id": 9,
+      "category": "plan-no-web-search",
+      "prompt": "Pulsuz plandayam, web axtarış yoxdur. Photoshop 2025-də Generative Expand harada yerləşir və neçə kredit gedir?",
+      "expectations": [
+        "Answers in Azerbaijani; works normally and does not ask the user to turn on web search",
+        "Gives the location from the references: Crop tool (C), drag past the canvas edge, Generate; notes it may differ by version",
+        "Does not invent a per-generation credit cost; may give the plan figure from the references (e.g. 25 credits/month on the Photoshop plan), says partner models cost more and to check the number shown before clicking or the plan page",
+        "Includes a 'check Adobe Help' (helpx.adobe.com) line for the version-specific fact and never claims to have checked a page",
+        "Mentions that generative features need internet, an Adobe account and credits",
+        "Phone-short; ends with one next step or one-line offer"
+      ]
+    },
+    {
+      "id": 10,
+      "category": "plan-lite-path",
+      "prompt": "Mesajlarım tez bitir, qısa yaz. Vizit kartı 90x50 mm çap üçün Photoshop-da necə fayl açım?",
+      "expectations": [
+        "Answers in Azerbaijani; lite path: one mode only, at most 3 numbered steps",
+        "Key numbers present: 90x50 mm + 3 mm bleed = 96x56 mm, 300 ppi (about 1134x661 px)",
+        "Says the print shop's rules win / ask them first (required line not cut)",
+        "Ends with exactly one short offer line such as 'details?' / 'ətraflı?' and nothing after it",
+        "No long theory, no extra modes (no review, no job or AI content); about 12 lines or fewer"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "plan-no-code-execution",
+      "prompt": "I can't run code here. My poster headline is #888888 on a white background. Is the contrast OK, and what pixel size is an A5 poster with 3 mm bleed at 300 ppi?",
+      "expectations": [
+        "Does not run or ask the user to run or install Python; does the maths by hand",
+        "Contrast: about 3.5:1 (3.54); fails AA for normal text (4.5:1), passes only as large text (3:1); suggests a darker grey (e.g. #767676 or darker)",
+        "A5 with bleed: 154 x 216 mm -> about 1819 x 2551 px at 300 ppi, with the formula or sum shown in one line",
+        "Mentions the print shop's rules win or asking them about bleed/format",
+        "Answers in English, phone-short, one closing line"
+      ]
     }
   ]
 }

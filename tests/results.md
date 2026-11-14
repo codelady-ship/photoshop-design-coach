@@ -78,3 +78,18 @@ The expected values are the published ones: ISO A4 at 300 ppi, and the WebAIM va
 - Add `--json` once to check JSON output.
 
 The script uses only argparse, json and sys. It has no file, network, shell or environment access, and it is 9.3 KB, under Agensi's 20 KB limit.
+
+
+## Review 2026-11-14 (v1.1.0 ZIP, branch fix/review-2026-11-14): plan-compatibility cases 9-11, 2 / 3, then a fix
+
+**Method:** answers verbatim in `review-2026-11-14/answers.md`. One fresh subagent saw only the files extracted from the rebuilt `dist/photoshop-design-coach.zip` and the three user prompts (each answered as a separate chat). It was told it could not run code, was on the Free plan and had no web search. It did not see `evals/evals.json`. Because only one eval subagent was allowed for this review, the answers were graded by the fixer agent (not a separate grader) against `evals/evals.json` cases 9-11.
+
+| # | Category | Result | Notes |
+|---|---|---|---|
+| 9 | no web search (AZ, Generative Expand + credits) | **FAIL** | Location (Crop `C` ▸ drag past edge ▸ Generate), internet/Adobe ID/credits, 25 credits/month plan figure, "partner models cost more, check the number before Generate", "check Adobe Help for your version", Content-Aware Fill alternative: all correct. Failed "never claims to have checked a page": the stock footer said "Versiya faktları Adobe Help-dən götürülüb (2026-11 yoxlanılıb)". Also more than one line after the main content |
+| 10 | lite path (AZ, 90×50 card) | PASS | 3 steps, 96×56 mm, 300 ppi, 1134×661 px, safe zone, PDF, CMYK only on request, "print shop's rules win", single closing "Detallar?" |
+| 11 | no code execution (EN, #888888 + A5) | PASS | No Python; 3.54:1 by hand with the sum, fails normal / passes large, suggests #767676; 154×216 mm → 1819×2551 px with the formula; print-shop line; one closing offer |
+
+**Fix (same branch):** the footer now reads "Version facts from this skill's notes (2026-11); check Adobe Help for your version…" and must never say "checked"; the plan-compatibility rule says the footer is included. **Case 9 was not re-run after this fix** (one eval subagent per review); re-run it before release.
+
+The `design_calc.py` `--json` change was **not executed** (Python is not installed). `node tests/node-port/design_calc_check.mjs`: 16/16 PASS (maths only; the port does not cover argument parsing).

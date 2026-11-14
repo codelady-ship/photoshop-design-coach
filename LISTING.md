@@ -6,7 +6,7 @@ DRAFT. Nothing has been submitted. The owner pastes these fields into agensi.io/
 |---|---|
 | ZIP to upload | `photoshop-design-coach\dist\photoshop-design-coach.zip` |
 | ZIP contents | SKILL.md, references/ (8), scripts/design_calc.py, CHANGELOG.md. No README, LICENSE, LISTING, evals or tests |
-| Version | 1.0.0 |
+| Version | 1.1.0 |
 | Price | **Free** |
 | Brand | Codelady Abroad |
 | Docs link | `https://github.com/codelady-ship/photoshop-design-coach` (public repo, MIT) |
@@ -61,7 +61,7 @@ photoshop, graphic-design, photopea, gimp, canva, print-design, social-media-des
 Nothing required. Text only. Optional: running `scripts/design_calc.py` (Python 3, standard library, no files, no network) if the agent can run code. Expect the scan to show "scripts present"; there are no network calls, file writes, shell calls or env reads.
 
 ## Compatibility note
-Works on any agent. The Python calculator is optional; agents without code execution use the formulas in SKILL.md. Image review needs an agent that accepts images; otherwise the user describes the design.
+Works on any agent and on every Claude plan (Free, Pro, Max, Team): no web search, code execution or scheduled tasks needed. The Python calculator is optional; agents without code execution use the formulas in SKILL.md. On tight Free limits it gives one mode and the top 3 steps, then offers details. Image review needs an agent that accepts images; otherwise the user describes the design.
 
 ## Limitations / FAQ
 - **Does it open my PSD?** No. Paste the numbers (Image ▸ Image Size, Image ▸ Mode) or a screenshot if your agent supports images.
